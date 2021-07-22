@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS img_list
 (
     product_id INTEGER NOT NULL,
     img        BLOB    NOT NULL,
+    content_type TEXT NOT NULL,
     FOREIGN KEY (product_id) REFERENCES product (id)
 );
 
